@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Grok $1k Mandate</title>
+<style>
+:root{--bg:#0b0f14;--card:#121821;--line:#223042;--text:#e8eef6;--muted:#8ea0b5;--up:#3dd68c;--down:#ff6b6b;--accent:#7dd3fc}
+*{box-sizing:border-box}body{margin:0;background:#0b0f14;color:var(--text);font-family:ui-sans-serif,system-ui,sans-serif}
+.wrap{max-width:1100px;margin:0 auto;padding:28px 20px 60px}
+.top{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:flex-end}
+h1{margin:0;font-size:28px}.sub{color:var(--muted);margin-top:6px}
+.badge{font-family:ui-monospace,monospace;font-size:12px;padding:6px 10px;border:1px solid var(--line);border-radius:999px;color:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:24px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}
+.k{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.08em}
+.v{font-family:ui-monospace,monospace;font-size:26px;margin-top:8px}
+.up{color:var(--up)}.down{color:var(--down)}
+table{width:100%;border-collapse:collapse}
+th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line);font-size:14px}
+th{color:var(--muted);font-weight:500;font-size:12px;text-transform:uppercase}
+.mono{font-family:ui-monospace,monospace}.note{color:var(--muted);line-height:1.5}
+@media(max-width:800px){.grid{grid-template-columns:1fr 1fr}.v{font-size:22px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="top"><div><h1>Grok $1k Mandate</h1><div class="sub">Isolated Coinbase sleeve. Default account is not traded here.</div></div><div class="badge" id="updated">Loading</div></div>
+<div class="grid">
+<div class="card"><div class="k">NAV</div><div class="v" id="nav">—</div></div>
+<div class="card"><div class="k">P&amp;L vs $1,000</div><div class="v" id="pnl">—</div></div>
+<div class="card"><div class="k">Cash USDC</div><div class="v" id="cash">—</div></div>
+<div class="card"><div class="k">Open orders</div><div class="v" id="orders">—</div></div>
+</div>
+<div class="card" style="margin-bottom:12px"><div class="k">Positions</div>
+<table><thead><tr><th>Asset</th><th>Qty</th><th>Avg</th><th>Mark</th><th>Value</th><th>P&amp;L</th></tr></thead><tbody id="pos"></tbody></table></div>
+<div class="card" style="margin-bottom:12px"><div class="k">Fills</div>
+<table><thead><tr><th>Time</th><th>Side</th><th>Asset</th><th>Qty</th><th>Price</th><th>Fee</th></tr></thead><tbody id="fills"></tbody></table></div>
+<div class="card"><div class="k">Last action</div><p class="note" id="action"></p><p class="note" id="status"></p></div>
+</div>
+<script>
+const fallback={"updated_at":"2026-09-09T14:59:00-10:00","nav":983.96,"pnl":-16.04,"pnl_pct":-1.6,"usdc":194.77,"open_orders":0,"status":"Fully deployed. Monitoring hourly.","last_action":"All four target bids filled.","positions":[{"asset":"SOL","qty":2.93255131,"avg_cost":102.45,"price":101,"value":296.19,"pnl":-6.05,"pnl_pct":-2},{"asset":"TAO","qty":0.7815,"avg_cost":255.9,"price":251.24,"value":196.34,"pnl":-4.85,"pnl_pct":-2.41},{"asset":"ZEC","qty":0.12053033,"avg_cost":1244.5,"price":1230.21,"value":148.28,"pnl":-2.62,"pnl_pct":-1.74},{"asset":"XRP","qty":106.990014,"avg_cost":1.402,"price":1.38685,"value":148.38,"pnl":-2.52,"pnl_pct":-1.67},{"asset":"USDC","qty":194.77,"avg_cost":1,"price":1,"value":194.77,"pnl":0,"pnl_pct":0}],"fills":[{"time":"2026-09-09T11:24:20-10:00","side":"BUY","asset":"SOL","qty":2.93255131,"price":102.45,"fee":1.8},{"time":"2026-09-09T11:27:16-10:00","side":"BUY","asset":"TAO","qty":0.7815,"price":255.9,"fee":1.2},{"time":"2026-09-09T11:27:24-10:00","side":"BUY","asset":"ZEC","qty":0.12053033,"price":1244.5,"fee":0.9},{"time":"2026-09-09T11:27:27-10:00","side":"BUY","asset":"XRP","qty":106.990014,"price":1.402,"fee":0.9}]};
+function money(n){return (n<0?"-":"")+"$"+Math.abs(n).toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2})}
+function pct(n){return (n>0?"+":"")+Number(n).toFixed(2)+"%"}
+function cls(n){return n>0?"up":n<0?"down":""}
+function render(d){
+document.getElementById("updated").textContent="Updated "+d.updated_at;
+document.getElementById("nav").textContent=money(d.nav);
+const p=document.getElementById("pnl"); p.textContent=money(d.pnl)+"  "+pct(d.pnl_pct); p.className="v "+cls(d.pnl);
+document.getElementById("cash").textContent=money(d.usdc);
+document.getElementById("orders").textContent=d.open_orders;
+document.getElementById("action").textContent=d.last_action||"";
+document.getElementById("status").textContent=d.status||"";
+document.getElementById("pos").innerHTML=(d.positions||[]).map(x=>`<tr><td>${x.asset}</td><td class="mono">${x.qty}</td><td class="mono">${x.avg_cost}</td><td class="mono">${x.price}</td><td class="mono">${money(x.value)}</td><td class="mono ${cls(x.pnl)}">${money(x.pnl)} ${pct(x.pnl_pct)}</td></tr>`).join("");
+document.getElementById("fills").innerHTML=(d.fills||[]).map(x=>`<tr><td class="mono">${x.time}</td><td>${x.side}</td><td>${x.asset}</td><td class="mono">${x.qty}</td><td class="mono">${x.price}</td><td class="mono">${money(x.fee)}</td></tr>`).join("");
+}
+render(fallback);
+fetch("data.json?ts="+Date.now()).then(r=>r.ok?r.json():fallback).then(render).catch(()=>render(fallback));
+</script>
+</body></html>
