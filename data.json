@@ -1,0 +1,27 @@
+{
+  "updated_at": "2026-09-09T14:59:00-10:00",
+  "portfolio": "Grok $1k Mandate",
+  "portfolio_id": "2e8a73b9-be4d-438a-8c63-e550e5f420b2",
+  "starting_nav": 1000.0,
+  "nav": 983.96,
+  "pnl": -16.04,
+  "pnl_pct": -1.60,
+  "usdc": 194.77,
+  "fees_paid": 4.80,
+  "open_orders": 0,
+  "status": "Fully deployed. Monitoring hourly. No panic-sell on first dip.",
+  "positions": [
+    {"asset": "SOL", "qty": 2.93255131, "avg_cost": 102.45, "cost": 302.24, "price": 101.00, "value": 296.19, "pnl": -6.05, "pnl_pct": -2.00},
+    {"asset": "TAO", "qty": 0.7815, "avg_cost": 255.90, "cost": 201.19, "price": 251.24, "value": 196.34, "pnl": -4.85, "pnl_pct": -2.41},
+    {"asset": "ZEC", "qty": 0.12053033, "avg_cost": 1244.50, "cost": 150.90, "price": 1230.21, "value": 148.28, "pnl": -2.62, "pnl_pct": -1.74},
+    {"asset": "XRP", "qty": 106.990014, "avg_cost": 1.402, "cost": 150.90, "price": 1.38685, "value": 148.38, "pnl": -2.52, "pnl_pct": -1.67},
+    {"asset": "USDC", "qty": 194.77, "avg_cost": 1.0, "cost": 194.77, "price": 1.0, "value": 194.77, "pnl": 0.0, "pnl_pct": 0.0}
+  ],
+  "fills": [
+    {"time": "2026-09-09T11:24:20-10:00", "side": "BUY", "asset": "SOL", "qty": 2.93255131, "price": 102.45, "fee": 1.80},
+    {"time": "2026-09-09T11:27:16-10:00", "side": "BUY", "asset": "TAO", "qty": 0.7815, "price": 255.90, "fee": 1.20},
+    {"time": "2026-09-09T11:27:24-10:00", "side": "BUY", "asset": "ZEC", "qty": 0.12053033, "price": 1244.50, "fee": 0.90},
+    {"time": "2026-09-09T11:27:27-10:00", "side": "BUY", "asset": "XRP", "qty": 106.990014, "price": 1.402, "fee": 0.90}
+  ],
+  "last_action": "All four target bids filled. Sleeve down ~1.6% on entry fees + afternoon dip. Hourly manager armed. Default book untouched."
+}
