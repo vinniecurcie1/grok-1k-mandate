@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-09-11T22:12:00-10:00",
+  "updated_at": "2026-09-11T23:07:00-10:00",
   "portfolio": "Grok $1k Mandate",
   "portfolio_id": "2e8a73b9-be4d-438a-8c63-e550e5f420b2",
   "starting_nav": 3080.0,
-  "nav": 3042.14,
-  "pnl": -37.86,
-  "pnl_pct": -1.23,
+  "nav": 3042.54,
+  "pnl": -37.46,
+  "pnl_pct": -1.22,
   "usdc": 2023.27,
   "usdc_available": 937.14,
   "usdc_hold": 1086.13,
@@ -15,11 +15,11 @@
   "fills_24h": 1,
   "status": "HOLD. Cash 66.5% NAV. 9 post-only bids + 2 asks working. No stale-through. No +8% TP. No -18% cuts. Default untouched.",
   "positions": [
-    {"asset": "SOL", "qty": 2.93255131, "avg_cost": 102.45, "cost": 302.24, "price": 101.73, "value": 298.34, "pnl": -3.90, "pnl_pct": -1.29},
-    {"asset": "ETH", "qty": 0.09952229, "avg_cost": 2527.07, "cost": 251.50, "price": 2527.15, "value": 251.50, "pnl": 0.00, "pnl_pct": 0.00},
-    {"asset": "TAO", "qty": 0.7815, "avg_cost": 255.90, "cost": 201.19, "price": 235.79, "value": 184.27, "pnl": -16.92, "pnl_pct": -8.41},
-    {"asset": "ZEC", "qty": 0.12053033, "avg_cost": 1244.50, "cost": 150.90, "price": 1149.28, "value": 138.52, "pnl": -12.38, "pnl_pct": -8.20},
-    {"asset": "XRP", "qty": 106.990014, "avg_cost": 1.402, "cost": 150.90, "price": 1.3679, "value": 146.35, "pnl": -4.55, "pnl_pct": -3.02},
+    {"asset": "SOL", "qty": 2.93255131, "avg_cost": 102.45, "cost": 302.24, "price": 101.83, "value": 298.62, "pnl": -3.62, "pnl_pct": -1.20},
+    {"asset": "ETH", "qty": 0.09952229, "avg_cost": 2527.07, "cost": 251.50, "price": 2532.45, "value": 251.94, "pnl": 0.44, "pnl_pct": 0.17},
+    {"asset": "TAO", "qty": 0.7815, "avg_cost": 255.90, "cost": 201.19, "price": 235.54, "value": 184.07, "pnl": -17.12, "pnl_pct": -8.51},
+    {"asset": "ZEC", "qty": 0.12053033, "avg_cost": 1244.50, "cost": 150.90, "price": 1148.73, "value": 138.46, "pnl": -12.44, "pnl_pct": -8.24},
+    {"asset": "XRP", "qty": 106.990014, "avg_cost": 1.402, "cost": 150.90, "price": 1.3663, "value": 146.18, "pnl": -4.72, "pnl_pct": -3.13},
     {"asset": "USDC", "qty": 2023.271726180485, "avg_cost": 1.0, "cost": 2023.27, "price": 1.0, "value": 2023.27, "pnl": 0.0, "pnl_pct": 0.0}
   ],
   "open_bids": [
@@ -45,5 +45,5 @@
     {"time": "2026-09-11T15:15:00-10:00", "side": "TRANSFER_IN", "asset": "USDC", "qty": 2080.00, "price": 1.00, "fee": 0.00},
     {"time": "2026-09-11T15:28:15-10:00", "side": "BUY", "asset": "ETH", "qty": 0.09952229, "price": 2512.00, "fee": 1.50}
   ],
-  "last_action": "HOLD. 9 bids already working 2.4-3.6% under tape, none stale-through. Asks: ETH 0.04@2581, SOL 0.88@105. TAO -8.4% / ZEC -8.2% vs lot, thesis intact, add rungs already on book. No +8% TP. Cash 66.5% NAV / avail $937. Did not add more rungs this hour (do not raid cash just to look busy). Default portfolio not touched. Next: if any buy fills, rest +2.5-3% sell; watch TAO/ZEC only at -18% thesis-break."
+  "last_action": "HOLD. 9 bids already working 2.5-3.6% under tape, none stale-through. Asks: ETH 0.04@2581, SOL 0.88@105. TAO -8.5% / ZEC -8.2% vs lot, thesis intact, add rungs already on book. No +8% TP. Cash 66.5% NAV / avail $937. Did not add more rungs this hour (do not raid cash just to look busy). Default portfolio not touched. Next: if any buy fills, rest +2.5-3% sell; watch TAO/ZEC only at -18% thesis-break."
 }
