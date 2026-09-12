@@ -1,30 +1,40 @@
 {
-  "updated_at": "2026-09-11T15:12:00-10:00",
+  "updated_at": "2026-09-11T16:13:00-10:00",
   "portfolio": "Grok $1k Mandate",
   "portfolio_id": "2e8a73b9-be4d-438a-8c63-e550e5f420b2",
   "starting_nav": 3080.0,
-  "nav": 3019.26,
-  "pnl": -60.74,
-  "pnl_pct": -1.97,
-  "usdc": 2274.77,
-  "cash_pct": 75.34,
-  "fees_paid": 4.80,
-  "open_orders": 0,
-  "fills_24h": 0,
-  "status": "HOLD. Cash 75% vs 40% FOMC floor. No new orders. Default book untouched.",
+  "nav": 3039.40,
+  "pnl": -40.60,
+  "pnl_pct": -1.32,
+  "usdc": 2023.27,
+  "usdc_available": 1540.31,
+  "usdc_hold": 482.97,
+  "cash_pct": 66.57,
+  "fees_paid": 6.30,
+  "open_orders": 4,
+  "fills_24h": 1,
+  "status": "ACTION. ETH starter filled @ 2512 maker. Rested 4 post-only GTC bids (~$120 each) on SOL/ETH/XRP grid and TAO add. Default book untouched.",
   "positions": [
-    {"asset": "SOL", "qty": 2.93255131, "avg_cost": 102.45, "cost": 302.24, "price": 99.195, "value": 290.87, "pnl": -11.37, "pnl_pct": -3.76},
-    {"asset": "TAO", "qty": 0.7815, "avg_cost": 255.90, "cost": 201.19, "price": 234.815, "value": 183.51, "pnl": -17.68, "pnl_pct": -8.79},
-    {"asset": "ZEC", "qty": 0.12053033, "avg_cost": 1244.50, "cost": 150.90, "price": 1064.01, "value": 128.25, "pnl": -22.65, "pnl_pct": -15.01},
-    {"asset": "XRP", "qty": 106.990014, "avg_cost": 1.402, "cost": 150.90, "price": 1.32595, "value": 141.86, "pnl": -9.04, "pnl_pct": -5.99},
-    {"asset": "USDC", "qty": 2274.771718615365, "avg_cost": 1.0, "cost": 2274.77, "price": 1.0, "value": 2274.77, "pnl": 0.0, "pnl_pct": 0.0}
+    {"asset": "SOL", "qty": 2.93255131, "avg_cost": 102.45, "cost": 302.24, "price": 101.91, "value": 298.80, "pnl": -3.44, "pnl_pct": -1.14},
+    {"asset": "ETH", "qty": 0.09952229, "avg_cost": 2527.07, "cost": 251.50, "price": 2515.08, "value": 250.30, "pnl": -1.20, "pnl_pct": -0.48},
+    {"asset": "TAO", "qty": 0.7815, "avg_cost": 255.90, "cost": 201.19, "price": 235.18, "value": 183.76, "pnl": -17.43, "pnl_pct": -8.66},
+    {"asset": "ZEC", "qty": 0.12053033, "avg_cost": 1244.50, "cost": 150.90, "price": 1142.20, "value": 137.67, "pnl": -13.23, "pnl_pct": -8.77},
+    {"asset": "XRP", "qty": 106.990014, "avg_cost": 1.402, "cost": 150.90, "price": 1.361, "value": 145.61, "pnl": -5.29, "pnl_pct": -3.51},
+    {"asset": "USDC", "qty": 2023.271726180485, "avg_cost": 1.0, "cost": 2023.27, "price": 1.0, "value": 2023.27, "pnl": 0.0, "pnl_pct": 0.0}
+  ],
+  "open_bids": [
+    {"id": "a75f0408-232b-43ed-9735-f1ea60b158c6", "product": "SOL-USDC", "side": "BUY", "qty": 1.21, "price": 99.25, "notional": 120.09},
+    {"id": "3ab722c9-a0d3-4892-a63b-7ed87e0cfa25", "product": "ETH-USDC", "side": "BUY", "qty": 0.049, "price": 2449.60, "notional": 120.03},
+    {"id": "004a0c09-1db7-4c16-a1e0-619eea9bbbe8", "product": "XRP-USDC", "side": "BUY", "qty": 90.525, "price": 1.3256, "notional": 120.00},
+    {"id": "3820b78c-7eb7-40a2-b767-a22907d9e108", "product": "TAO-USDC", "side": "BUY", "qty": 0.525, "price": 228.50, "notional": 119.96}
   ],
   "fills": [
     {"time": "2026-09-09T11:24:20-10:00", "side": "BUY", "asset": "SOL", "qty": 2.93255131, "price": 102.45, "fee": 1.80},
     {"time": "2026-09-09T11:27:16-10:00", "side": "BUY", "asset": "TAO", "qty": 0.7815, "price": 255.90, "fee": 1.20},
     {"time": "2026-09-09T11:27:24-10:00", "side": "BUY", "asset": "ZEC", "qty": 0.12053033, "price": 1244.50, "fee": 0.90},
     {"time": "2026-09-09T11:27:27-10:00", "side": "BUY", "asset": "XRP", "qty": 106.990014, "price": 1.402, "fee": 0.90},
-    {"time": "2026-09-11T15:15:00-10:00", "side": "TRANSFER_IN", "asset": "USDC", "qty": 2080.00, "price": 1.00, "fee": 0.00}
+    {"time": "2026-09-11T15:15:00-10:00", "side": "TRANSFER_IN", "asset": "USDC", "qty": 2080.00, "price": 1.00, "fee": 0.00},
+    {"time": "2026-09-11T15:28:15-10:00", "side": "BUY", "asset": "ETH", "qty": 0.09952229, "price": 2512.00, "fee": 1.50}
   ],
-  "last_action": "HOLD. Marks from Coinbase spot. TAO -8.8% is add-zone but FOMC 9/15-16 dry-powder rule blocks new risk. ZEC -15% vs cost but no thesis-break event; not cutting with the book. No open orders, 0 fills in 24h."
+  "last_action": "ACTION. ETH fill 0.09952229 @ 2512 maker ($251.50 all-in). Book was empty with cash 67% NAV so rested 4 post-only GTC bids: SOL 1.21@99.25, ETH 0.049@2449.60, XRP 90.525@1.3256, TAO 0.525@228.50 (~$120 each, ~2.6-2.8% under bid). No TP (+8%) or cut (-18% thesis-break). ZEC -8.8% watched not cut. Default portfolio not touched. Next: if a grid buy fills, rest +2.5-3% sell; if bids go >0.6% through market, cancel/replace."
 }
