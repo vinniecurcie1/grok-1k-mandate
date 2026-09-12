@@ -1,25 +1,25 @@
 {
-  "updated_at": "2026-09-11T18:06:00-10:00",
+  "updated_at": "2026-09-11T19:03:00-10:00",
   "portfolio": "Grok $1k Mandate",
   "portfolio_id": "2e8a73b9-be4d-438a-8c63-e550e5f420b2",
   "starting_nav": 3080.0,
-  "nav": 3036.77,
-  "pnl": -43.23,
-  "pnl_pct": -1.40,
+  "nav": 3036.56,
+  "pnl": -43.44,
+  "pnl_pct": -1.41,
   "usdc": 2023.27,
   "usdc_available": 1057.80,
   "usdc_hold": 965.47,
   "cash_pct": 66.63,
   "fees_paid": 6.30,
-  "open_orders": 8,
+  "open_orders": 9,
   "fills_24h": 1,
-  "status": "ACTION. Cash 67% NAV. Rested HYPE starter 1.561@76.87 and SUI starter 169.4@0.7085 (~$120 post-only each, ~2.5% under bid). Book now 8 bids. Default untouched.",
+  "status": "ACTION. Cash 67% NAV. Rested ETH grid post-only sell 0.04@2581 (+2.75% vs 2512 fill). 8 bids unchanged, none stale-through. Default untouched.",
   "positions": [
-    {"asset": "SOL", "qty": 2.93255131, "avg_cost": 102.45, "cost": 302.24, "price": 101.66, "value": 298.12, "pnl": -4.12, "pnl_pct": -1.36},
-    {"asset": "ETH", "qty": 0.09952229, "avg_cost": 2527.07, "cost": 251.50, "price": 2512.68, "value": 250.07, "pnl": -1.43, "pnl_pct": -0.57},
-    {"asset": "TAO", "qty": 0.7815, "avg_cost": 255.90, "cost": 201.19, "price": 234.13, "value": 182.97, "pnl": -18.22, "pnl_pct": -9.06},
-    {"asset": "ZEC", "qty": 0.12053033, "avg_cost": 1244.50, "cost": 150.90, "price": 1131.71, "value": 136.41, "pnl": -14.49, "pnl_pct": -9.60},
-    {"asset": "XRP", "qty": 106.990014, "avg_cost": 1.402, "cost": 150.90, "price": 1.364, "value": 145.93, "pnl": -4.97, "pnl_pct": -3.29},
+    {"asset": "SOL", "qty": 2.93255131, "avg_cost": 102.45, "cost": 302.24, "price": 101.58, "value": 297.89, "pnl": -4.35, "pnl_pct": -1.44},
+    {"asset": "ETH", "qty": 0.09952229, "avg_cost": 2527.07, "cost": 251.50, "price": 2511.85, "value": 249.99, "pnl": -1.51, "pnl_pct": -0.60},
+    {"asset": "TAO", "qty": 0.7815, "avg_cost": 255.90, "cost": 201.19, "price": 233.72, "value": 182.65, "pnl": -18.54, "pnl_pct": -9.21},
+    {"asset": "ZEC", "qty": 0.12053033, "avg_cost": 1244.50, "cost": 150.90, "price": 1135.99, "value": 136.92, "pnl": -13.98, "pnl_pct": -9.26},
+    {"asset": "XRP", "qty": 106.990014, "avg_cost": 1.402, "cost": 150.90, "price": 1.3631, "value": 145.84, "pnl": -5.06, "pnl_pct": -3.35},
     {"asset": "USDC", "qty": 2023.271726180485, "avg_cost": 1.0, "cost": 2023.27, "price": 1.0, "value": 2023.27, "pnl": 0.0, "pnl_pct": 0.0}
   ],
   "open_bids": [
@@ -32,6 +32,9 @@
     {"id": "52f91848-6713-440d-921a-1b9fdf1450ea", "product": "HYPE-USDC", "side": "BUY", "qty": 1.561, "price": 76.87, "notional": 119.99},
     {"id": "8ddf3d80-873a-4193-b1e8-d49520efcac9", "product": "SUI-USDC", "side": "BUY", "qty": 169.4, "price": 0.7085, "notional": 120.02}
   ],
+  "open_asks": [
+    {"id": "dcab5df0-067c-46ea-ac00-0b1c720dfcaf", "product": "ETH-USDC", "side": "SELL", "qty": 0.04, "price": 2581.00, "notional": 103.24}
+  ],
   "fills": [
     {"time": "2026-09-09T11:24:20-10:00", "side": "BUY", "asset": "SOL", "qty": 2.93255131, "price": 102.45, "fee": 1.80},
     {"time": "2026-09-09T11:27:16-10:00", "side": "BUY", "asset": "TAO", "qty": 0.7815, "price": 255.90, "fee": 1.20},
@@ -40,5 +43,5 @@
     {"time": "2026-09-11T15:15:00-10:00", "side": "TRANSFER_IN", "asset": "USDC", "qty": 2080.00, "price": 1.00, "fee": 0.00},
     {"time": "2026-09-11T15:28:15-10:00", "side": "BUY", "asset": "ETH", "qty": 0.09952229, "price": 2512.00, "fee": 1.50}
   ],
-  "last_action": "ACTION. 6 bids already working, cash 67% NAV. Added HYPE 1.561@76.87 and SUI 169.4@0.7085 (~2.5% under bid, ~$120 each). No TP (+8%) hits. No cuts (TAO -9.1% / ZEC -9.6%, thesis not broken, tape soft). Existing rungs still ~2.1-2.8% under, not stale-through. Default portfolio not touched. Next: if any buy fills, rest +2.5-3% post-only sell; watch TAO/ZEC for -18% thesis-break only."
+  "last_action": "ACTION. Rested ETH-USDC post-only GTC sell 0.04@2581 (+2.75% vs 2512 maker fill). Left 8 working bids (~2.0-2.8% under bid). No +8% TP. No -18% cuts (TAO -9.2% / ZEC -9.3%, thesis intact). No stale-through. Did not add more bids (8 already). Default portfolio not touched. Next: if any buy fills, rest +2.5-3% sell; watch TAO/ZEC only at -18% thesis-break."
 }
