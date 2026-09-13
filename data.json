@@ -1,28 +1,28 @@
 {
-  "updated_at": "2026-09-13T09:15:00-10:00",
+  "updated_at": "2026-09-13T10:08:00-10:00",
   "portfolio": "Grok $1k Mandate",
   "portfolio_id": "2e8a73b9-be4d-438a-8c63-e550e5f420b2",
   "starting_nav": 3080.0,
-  "nav": 3035.83,
-  "pnl": -44.17,
-  "pnl_pct": -1.43,
+  "nav": 3031.57,
+  "pnl": -48.43,
+  "pnl_pct": -1.57,
   "usdc": 1469.40,
   "usdc_available": 744.99,
   "usdc_hold": 724.41,
-  "cash_pct": 48.40,
+  "cash_pct": 48.47,
   "fees_paid": 10.19,
   "open_orders": 12,
   "fills_24h": 6,
-  "status": "HOLD. 6 post-only bids and 6 asks working. Cash 48% NAV (avail $745). No bid through market. Default untouched.",
+  "status": "HOLD. 6 post-only bids and 6 asks working. Cash 48.5% NAV (avail $745). No bid through market. Default untouched.",
   "positions": [
-    {"asset": "SOL", "qty": 2.93255131, "avg_cost": 102.45, "cost": 302.24, "price": 101.005, "value": 296.20, "pnl": -6.04, "pnl_pct": -2.00},
-    {"asset": "ETH", "qty": 0.09952229, "avg_cost": 2527.07, "cost": 251.50, "price": 2508.815, "value": 249.68, "pnl": -1.82, "pnl_pct": -0.72},
-    {"asset": "ZEC", "qty": 0.29453033, "avg_cost": 1149.43, "cost": 338.55, "price": 1100.44, "value": 324.11, "pnl": -14.44, "pnl_pct": -4.27},
-    {"asset": "TAO", "qty": 0.7815, "avg_cost": 255.90, "cost": 201.19, "price": 236.365, "value": 184.72, "pnl": -16.47, "pnl_pct": -8.19},
-    {"asset": "XRP", "qty": 106.990014, "avg_cost": 1.402, "cost": 150.90, "price": 1.3547, "value": 144.94, "pnl": -5.96, "pnl_pct": -3.95},
-    {"asset": "SUI", "qty": 169.4, "avg_cost": 0.71275, "cost": 120.74, "price": 0.7210, "value": 122.14, "pnl": 1.40, "pnl_pct": 1.16},
-    {"asset": "LINK", "qty": 10.7, "avg_cost": 11.21, "cost": 119.95, "price": 11.4375, "value": 122.38, "pnl": 2.43, "pnl_pct": 2.03},
-    {"asset": "HYPE", "qty": 1.561, "avg_cost": 76.87, "cost": 119.99, "price": 78.32, "value": 122.26, "pnl": 2.27, "pnl_pct": 1.89},
+    {"asset": "SOL", "qty": 2.93255131, "avg_cost": 102.45, "cost": 302.24, "price": 101.05, "value": 296.35, "pnl": -5.89, "pnl_pct": -1.95},
+    {"asset": "ETH", "qty": 0.09952229, "avg_cost": 2527.07, "cost": 251.50, "price": 2506.35, "value": 249.42, "pnl": -2.08, "pnl_pct": -0.83},
+    {"asset": "ZEC", "qty": 0.29453033, "avg_cost": 1149.43, "cost": 338.55, "price": 1092.84, "value": 321.75, "pnl": -16.80, "pnl_pct": -4.96},
+    {"asset": "TAO", "qty": 0.7815, "avg_cost": 255.90, "cost": 201.19, "price": 234.60, "value": 183.28, "pnl": -17.91, "pnl_pct": -8.90},
+    {"asset": "XRP", "qty": 106.990014, "avg_cost": 1.402, "cost": 150.90, "price": 1.3564, "value": 145.11, "pnl": -5.79, "pnl_pct": -3.84},
+    {"asset": "SUI", "qty": 169.4, "avg_cost": 0.71275, "cost": 120.74, "price": 0.7188, "value": 121.75, "pnl": 1.01, "pnl_pct": 0.84},
+    {"asset": "LINK", "qty": 10.7, "avg_cost": 11.21, "cost": 119.95, "price": 11.4355, "value": 122.36, "pnl": 2.41, "pnl_pct": 2.01},
+    {"asset": "HYPE", "qty": 1.561, "avg_cost": 76.87, "cost": 119.99, "price": 78.27, "value": 122.16, "pnl": 2.17, "pnl_pct": 1.81},
     {"asset": "USDC", "qty": 1469.40, "avg_cost": 1.0, "cost": 1469.40, "price": 1.0, "value": 1469.40, "pnl": 0.0, "pnl_pct": 0.0}
   ],
   "open_bids": [
@@ -55,5 +55,5 @@
     {"time": "2026-09-13T03:25:54-10:00", "side": "BUY", "asset": "HYPE", "qty": 1.561, "price": 76.87, "fee": 0.72},
     {"time": "2026-09-13T07:05:43-10:00", "side": "SELL", "asset": "ZEC", "qty": 0.044, "price": 1116.00, "fee": 0.29}
   ],
-  "last_action": "HOLD 2026-09-13 09:15 HST. Book full: 6 maker bids (SOL 99.25, ETH 2449.6, XRP 1.3256, TAO 228.5, AVAX 7.23, ZEC 1035) and 6 maker asks (ETH 2581, SOL 105, SUI 0.727, ZEC 1138, LINK 11.518, HYPE 78.98). No stale through-market bids. TAO -8.2% vs lot with add already rested; do not cut. Cash floor intact (48%). Fills 24h=6/8. Default portfolio not touched. Next: HYPE 78.98 / LINK 11.518 / SUI 0.727 or grid bids if a fill frees cash."
+  "last_action": "HOLD 2026-09-13 10:08 HST. Book full: 6 maker bids (SOL 99.25, ETH 2449.6, XRP 1.3256, TAO 228.5, AVAX 7.23, ZEC 1035) and 6 maker asks (ETH 2581, SOL 105, SUI 0.727, ZEC 1138, LINK 11.518, HYPE 78.98). No stale through-market bids. TAO -8.9% vs lot with add already rested at 228.5; do not cut. Cash floor intact (48.5%). Fills 24h=6/8. Default portfolio not touched. Next: HYPE 78.98 / LINK 11.518 / SUI 0.727 or grid bids if a fill frees cash."
 }
