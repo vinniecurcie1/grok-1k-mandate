@@ -1,28 +1,28 @@
 {
-  "updated_at": "2026-09-13T04:08:00-10:00",
+  "updated_at": "2026-09-13T05:16:00-10:00",
   "portfolio": "Grok $1k Mandate",
   "portfolio_id": "2e8a73b9-be4d-438a-8c63-e550e5f420b2",
   "starting_nav": 3080.0,
-  "nav": 3026.10,
-  "pnl": -53.90,
-  "pnl_pct": -1.75,
+  "nav": 3019.99,
+  "pnl": -60.01,
+  "pnl_pct": -1.95,
   "usdc": 1420.59,
   "usdc_available": 696.18,
   "usdc_hold": 724.41,
-  "cash_pct": 46.94,
+  "cash_pct": 47.04,
   "fees_paid": 9.90,
   "open_orders": 13,
   "fills_24h": 5,
-  "status": "ACTION. LINK 10.7 @ 11.21 and HYPE 1.561 @ 76.87 maker-filled. Rested post-only sells LINK 4.28 @ 11.518 and HYPE 0.624 @ 78.98 (+2.75% vs lots). 6 bids still working. Default untouched.",
+  "status": "HOLD. 6 post-only bids and 7 asks already working. Cash 47% NAV (avail $696). No stale-through. Default untouched.",
   "positions": [
-    {"asset": "SOL", "qty": 2.93255131, "avg_cost": 102.45, "cost": 302.24, "price": 100.18, "value": 293.78, "pnl": -8.46, "pnl_pct": -2.80},
-    {"asset": "ETH", "qty": 0.09952229, "avg_cost": 2527.07, "cost": 251.50, "price": 2482.20, "value": 247.03, "pnl": -4.47, "pnl_pct": -1.78},
-    {"asset": "ZEC", "qty": 0.33853033, "avg_cost": 1149.43, "cost": 389.12, "price": 1098.68, "value": 371.94, "pnl": -17.18, "pnl_pct": -4.42},
-    {"asset": "TAO", "qty": 0.7815, "avg_cost": 255.90, "cost": 201.19, "price": 236.95, "value": 185.18, "pnl": -16.01, "pnl_pct": -7.96},
-    {"asset": "XRP", "qty": 106.990014, "avg_cost": 1.402, "cost": 150.90, "price": 1.3441, "value": 143.81, "pnl": -7.09, "pnl_pct": -4.70},
-    {"asset": "SUI", "qty": 169.4, "avg_cost": 0.71275, "cost": 120.74, "price": 0.7148, "value": 121.09, "pnl": 0.35, "pnl_pct": 0.29},
-    {"asset": "LINK", "qty": 10.7, "avg_cost": 11.21, "cost": 119.95, "price": 11.327, "value": 121.20, "pnl": 1.25, "pnl_pct": 1.04},
-    {"asset": "HYPE", "qty": 1.561, "avg_cost": 76.87, "cost": 119.99, "price": 77.97, "value": 121.71, "pnl": 1.72, "pnl_pct": 1.43},
+    {"asset": "SOL", "qty": 2.93255131, "avg_cost": 102.45, "cost": 302.24, "price": 100.25, "value": 294.09, "pnl": -8.15, "pnl_pct": -2.70},
+    {"asset": "ETH", "qty": 0.09952229, "avg_cost": 2527.07, "cost": 251.50, "price": 2485.00, "value": 247.31, "pnl": -4.19, "pnl_pct": -1.67},
+    {"asset": "ZEC", "qty": 0.33853033, "avg_cost": 1149.43, "cost": 389.12, "price": 1085.74, "value": 367.55, "pnl": -21.57, "pnl_pct": -5.54},
+    {"asset": "TAO", "qty": 0.7815, "avg_cost": 255.90, "cost": 201.19, "price": 233.11, "value": 182.18, "pnl": -19.01, "pnl_pct": -9.45},
+    {"asset": "XRP", "qty": 106.990014, "avg_cost": 1.402, "cost": 150.90, "price": 1.3458, "value": 143.99, "pnl": -6.91, "pnl_pct": -4.58},
+    {"asset": "SUI", "qty": 169.4, "avg_cost": 0.71275, "cost": 120.74, "price": 0.7139, "value": 120.93, "pnl": 0.19, "pnl_pct": 0.16},
+    {"asset": "LINK", "qty": 10.7, "avg_cost": 11.21, "cost": 119.95, "price": 11.265, "value": 120.54, "pnl": 0.59, "pnl_pct": 0.49},
+    {"asset": "HYPE", "qty": 1.561, "avg_cost": 76.87, "cost": 119.99, "price": 78.22, "value": 122.10, "pnl": 2.11, "pnl_pct": 1.76},
     {"asset": "USDC", "qty": 1420.59, "avg_cost": 1.0, "cost": 1420.59, "price": 1.0, "value": 1420.59, "pnl": 0.0, "pnl_pct": 0.0}
   ],
   "open_bids": [
@@ -55,5 +55,5 @@
     {"time": "2026-09-13T03:25:30-10:00", "side": "BUY", "asset": "LINK", "qty": 10.7, "price": 11.21, "fee": 0.72},
     {"time": "2026-09-13T03:25:54-10:00", "side": "BUY", "asset": "HYPE", "qty": 1.561, "price": 76.87, "fee": 0.72}
   ],
-  "last_action": "ACTION. LINK and HYPE bids filled as makers (~03:25 HST). Rested grid sells LINK 4.28 @ 11.518 and HYPE 0.624 @ 78.98 (+2.75% vs lot). 6 bids + 7 asks. No stale-through. Cash 46.9% NAV, avail $696. Fills 24h: 5. No name >25% (ZEC 12.3%). Default not touched. Next: if LINK/HYPE/SUI/ZEC/SOL/ETH/XRP ladder fills, recycle; TAO only cut at -18% thesis-break."
+  "last_action": "HOLD. Book already full: 6 maker bids (SOL 99.25, ETH 2449.6, XRP 1.3256, TAO 228.5, AVAX 7.23, ZEC 1035) and 7 maker asks. No bid through market. TAO -9.5% vs lot with add already rested; do not cut while tape is only mildly red. Cash floor intact. Fills 24h=5/8. Default portfolio not touched. Next: wait for HYPE/LINK/SUI/ZEC ladder or grid fills, then recycle."
 }
